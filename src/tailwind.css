@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --clr-primary-100: 21deg 94% 74%;
+    --clr-primary-200: 22deg 65% 57%;
+    --clr-secondary-100: 0deg 0% 98%;
+    --clr-secondary-200: 0deg 0% 95%;
+    --clr-secondary-300: 0deg 65% 49%;
+    --clr-secondary-400: 0deg 0% 6%;
+    --clr-black: 0deg 0% 0%;
+    --clr-white: 0deg 0% 100%;
+  }
+
+  body {
+    @apply font-manrope text-body;
+  }
+  h1 {
+    @apply text-lg font-bold lg:text-h1;
+  }
+  h2 {
+    @apply text-h4 font-bold lg:text-h2;
+  }
+}
