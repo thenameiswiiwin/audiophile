@@ -15,12 +15,12 @@
   }
 
   body {
-    @apply font-manrope text-body;
+    @apply font-manrope text-base min-h-screen bg-black md:px-10 lg:container;
   }
   h1 {
-    @apply text-lg font-bold lg:text-h1;
+    @apply text-lg font-bold md:text-h1;
   }
   h2 {
-    @apply text-h4 font-bold lg:text-h2;
+    @apply text-h4 font-bold md:text-h2;
   }
 }

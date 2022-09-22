@@ -1,9 +1,10 @@
 import Layout from '../components/Layout';
+import Hero from '../components/Hero';
 
 function Home() {
   return (
     <Layout>
-      <h1>Home</h1>
+      <Hero />
     </Layout>
   );
 }
