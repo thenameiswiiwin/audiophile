@@ -11,19 +11,19 @@ const LINKS = [
 
 function Navigation() {
   return (
-    <nav className="container border-b border-white/10 px-6 py-8 xl:py-9">
+    <nav className="border-b border-white/10 px-6 py-8 md:px-0 xl:py-9">
       <div className="flex items-center justify-between md:justify-start md:gap-11 xl:justify-between">
-        <div className="xl:hidden">
+        <button className="xl:hidden" type="button">
           <img src={Hamburger} alt="hamburger icon" />
-        </div>
-        <div>
+        </button>
+        <a href="/">
           <img src={Logo} alt="audiophile logo" />
-        </div>
+        </a>
         <div className="hidden xl:block">
           <ul className="flex gap-9">
             {LINKS.map((link) => (
               <li
-                className="text-subTitle uppercase text-white font-bold hover:text-primary-200"
+                className="text-subTitle hover:text-primary-200 font-bold uppercase text-white"
                 key={link.id}
               >
                 <a href="/">{link.name}</a>
@@ -31,9 +31,9 @@ function Navigation() {
             ))}
           </ul>
         </div>
-        <div className="md:ml-auto xl:ml-0">
+        <button className="md:ml-auto xl:ml-0" type="button">
           <img src={Cart} alt="cart icon" />
-        </div>
+        </button>
       </div>
     </nav>
   );

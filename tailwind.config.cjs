@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
+      padding: '1.5rem',
     },
     colors: {
       primary: {
@@ -43,17 +44,26 @@ module.exports = {
         { lineHeight: '1.1875rem', letterSpacing: '0.625em' },
       ],
       body: ['0.9375rem', '1.5625rem'],
-      base: ['1rem', { lineHeight: '1.5rem' }],
+      base: ['16px', { lineHeight: '24px' }],
       md: ['1.75rem', { lineHeight: '2.375rem', letterSpacing: '0.125em' }],
       lg: ['2.25rem', { lineHeight: '2.5rem', letterSpacing: '0.08125em' }],
     },
     lineHeight: {
-      'mobile-subTitle': '1.11rem',
+      mobile: '1.11rem',
     },
     letterSpacing: {
-      subTitle: '.0625em',
+      mobile: '.0625em',
     },
-    extend: {},
+    extend: {
+      spacing: {
+        84: '22rem',
+        100: '30rem',
+      },
+      backgroundImage: {
+        hero: "url('./src/assets/images/mobile/hero.png')",
+        'hero-desktop': "url('./src/assets/images/desktop/hero.png')",
+      },
+    },
   },
   plugins: [],
 };
