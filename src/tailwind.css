@@ -15,7 +15,7 @@
   }
 
   body {
-    @apply font-manrope text-base min-h-screen bg-black md:px-10 lg:container;
+    @apply font-manrope text-body min-h-screen;
   }
   h1 {
     @apply text-lg font-bold md:text-h1;
