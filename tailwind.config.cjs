@@ -2,6 +2,12 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
+    screens: {
+      md: '768px',
+      lg: '1060px',
+      xl: '1248px',
+      '2xl': '1440px'
+    },
     container: {
       center: true,
       padding: '1.5rem',
@@ -49,10 +55,12 @@ module.exports = {
       lg: ['2.25rem', { lineHeight: '2.5rem', letterSpacing: '0.08125em' }],
     },
     lineHeight: {
-      mobile: '1.11rem',
+      'mobile-subTitle': '1.11rem',
+      'mobile-body': '1.28rem',
     },
     letterSpacing: {
-      mobile: '.0625em',
+      'mobile-subTitle': '.0625em',
+      'mobile-body': '.066875rem',
     },
     extend: {
       spacing: {
